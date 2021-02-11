@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity"
+    android:background="@drawable/bsckground_2">
+
+    <TextView
+        android:id="@+id/nameA"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="----"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tim_1" />
+
+    <TextView
+        android:id="@+id/nameB"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="----"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tim_2" />
+
+    <TextView
+        android:id="@+id/tim_1"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="60dp"
+        android:text="Team A"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tim_2"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="60dp"
+        android:text="Team B"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/tim_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_score1"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameA" />
+
+    <TextView
+        android:id="@+id/txt_score2"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/txt_score1"
+        app:layout_constraintTop_toBottomOf="@+id/nameB" />
+
+    <Button
+        android:onClick="point3A"
+        android:id="@+id/bt1_3pt"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button2"
+        android:text="3 points"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_score1" />
+
+    <Button
+        android:onClick="point3B"
+        android:id="@+id/bt2_3pt"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button2"
+        android:text="3 points"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_score2" />
+
+    <Button
+        android:onClick="point2A"
+        android:id="@+id/bt1_2pt"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button2"
+        android:text="2 points"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1_3pt" />
+
+    <Button
+        android:onClick="point2B"
+        android:id="@+id/bt2_2pt"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/button2"
+        android:text="2 points"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_score2" />
+
+    <Button
+        android:onClick="point1B"
+        android:id="@+id/bt1_1pt"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/button2"
+        android:text="Free Throws"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_score2" />
+
+    <Button
+        android:onClick="point1A"
+        android:id="@+id/bt2_1pt"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button2"
+        android:text="Free Throws"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1_2pt" />
+
+    <Button
+        android:onClick="reset"
+        android:id="@+id/bt_reset"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/button2"
+        android:text="RESET"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
